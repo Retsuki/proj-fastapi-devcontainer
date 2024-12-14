@@ -1,0 +1,22 @@
+{
+  "name": "Python Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "settings": {
+    "python.defaultInterpreterPath": "/app/.venv/bin/python"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-toolsai.jupyter",
+    "charliermarsh.ruff",
+    "ms-azuretools.vscode-docker",
+    "github.copilot",
+    "streetsidesoftware.code-spell-checker",
+    "eamodio.gitlens"
+  ],
+  "postCreateCommand": "uv sync --frozen --no-cache",
+  "remoteUser": "root"
+}
